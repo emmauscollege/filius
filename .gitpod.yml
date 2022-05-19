@@ -2,7 +2,7 @@ image:
   file: Dockerfile
 tasks:
   - command: |
-      ln -s '/workspace/filius/filius bestanden' '/home/gitpod/filius bestanden' \ &&
+      ln -s '/workspace/filius/filius bestanden' '/home/gitpod/filius bestanden'
       ln -s '/workspace/filius/filius bestanden' '/home/gitpod/Desktop/filius bestanden'
 ports:
   - port: 6080
