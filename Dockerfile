@@ -1,6 +1,5 @@
 FROM gitpod/workspace-full-vnc
 
-RUN echo "test"
 RUN sudo apt-get update
 RUN yes y | sudo apt install default-jre
 
