@@ -6,5 +6,7 @@ tasks:
       sleep 2
       ln -s '/workspace/filius/filius bestanden' '/home/gitpod/Desktop/filius bestanden'
 ports:
+  - port: 5900
+    onOpen: ignore
   - port: 6080
-    onOpen: open-preview
+    onOpen: open-browser
