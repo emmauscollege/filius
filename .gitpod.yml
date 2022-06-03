@@ -3,11 +3,11 @@ image:
 tasks:
   - command: |
       sudo sed -i 's/# locale=en_GB/locale=en_GB/' /etc/filius/filius.ini
-      cp /usr/share/applications/filius.desktop /home/gitpod/Desktop/
-      chmod +x /home/gitpod/Desktop/filius.desktop
       ln -s '/workspace/filius/filius bestanden' '/home/gitpod/filius bestanden'
       sleep 2
       ln -s '/workspace/filius/filius bestanden' '/home/gitpod/Desktop/filius bestanden'
+      cp /usr/share/applications/filius.desktop /home/gitpod/Desktop/
+      chmod +x /home/gitpod/Desktop/filius.desktop
 ports:
   - port: 5900
     onOpen: ignore
