@@ -1,8 +1,12 @@
 # executed each time the container is (re)started
 # commands should terminate, use nohup otherwise
 
+# set language of Filius
+sudo sed -i 's/# locale=en_GB/locale=en_GB/' /etc/filius/filius.ini
+     
+
 # link 'filius bestanden'
-ln -s '/workspaces/filius/filius bestanden' '/home/codespace/filius bestanden'
+ln -sf '/workspaces/filius/filius bestanden' '/home/codespace/filius bestanden'
 #sleep 2
 #ln -s '/workspace/filius/filius bestanden' '/home/gitpod/Desktop/filius bestanden'
 
