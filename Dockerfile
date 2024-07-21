@@ -9,5 +9,6 @@ RUN yes y | sudo apt install wmctrl
 
 WORKDIR /tmp
 
-RUN curl -o filius.deb https://www.lernsoftware-filius.de/downloads/Setup/filius_2.4.1_all.deb
+RUN curl -o filius.deb https://www.lernsoftware-filius.de/downloads/Setup/filius_latest_all.deb
+#RUN curl -o filius.deb https://www.lernsoftware-filius.de/downloads/Setup/filius_2.4.1_all.deb
 RUN sudo dpkg -i filius.deb
