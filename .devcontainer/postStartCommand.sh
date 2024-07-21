@@ -21,12 +21,17 @@ echo $?
 nohup bash -c 'filius > .nohup_filius.out 2>&1 & rm nohup.out &'
 echo $?
 
-sleep 4
+#show list of windows
+wmctrl -l
+echo $?
+# wait for FILIUS window
+while ! wmctrl | grep -q FILIUS ; do sleep 1; echo "wait for FILIUS window"; done
 echo $?
 #show list of windows
 wmctrl -l
 echo $?
+
 # maximize filius window
-/usr/bin/wmctrl -r 'FILIUS' -b add,maximized_horz,maximized_vert
+wmctrl -r 'FILIUS' -b add,maximized_horz,maximized_vert
 echo $?
 # wmctrl -r ':ACTIVE:' -b add,full_screen // alternative
