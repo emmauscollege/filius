@@ -23,6 +23,9 @@ echo $?
 
 sleep 4
 echo $?
+#show list of windows
+wmctrl -l
+echo $?
 # maximize filius window
 /usr/bin/wmctrl -r 'FILIUS' -b add,maximized_horz,maximized_vert
 echo $?
