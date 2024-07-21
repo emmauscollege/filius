@@ -13,9 +13,10 @@ tasks:
       # create filius start icon on desktop
       cp /usr/share/applications/filius.desktop /home/gitpod/Desktop/
       chmod +x /home/gitpod/Desktop/filius.desktop
-      # start filiu
+      # start filius
       filius &
-      sleep 2
+      # wait for FILIUS window
+      while ! wmctrl -l| grep -q FILIUS ; do sleep 1; echo "wait for FILIUS window"; done
       # maximize filius window
       wmctrl -r 'FILIUS' -b add,maximized_horz,maximized_vert
       # wmctrl -r ':ACTIVE:' -b add,full_screen // alternative
