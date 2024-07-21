@@ -1,15 +1,8 @@
 # executed each time the container is (re)started
 # commands should terminate, use nohup otherwise
 
-# set java version to the latest installed
-latest_java=$(sdk list java | awk '/installed/ {print $NF}'|sort -V|tail -n 1)
-sdk default java $latest_java
-
-# set language of Filius
-sudo sed -i 's/# locale=en_GB/locale=en_GB/' /etc/filius/filius.ini
-
 # link 'filius bestanden'
-#ln -s '/workspace/filius/filius bestanden' '/home/gitpod/filius bestanden'
+ln -s '/workspaces/filius/filius bestanden' '/home/codespace/filius bestanden'
 #sleep 2
 #ln -s '/workspace/filius/filius bestanden' '/home/gitpod/Desktop/filius bestanden'
 

@@ -11,4 +11,4 @@ curl -o filius.deb https://www.lernsoftware-filius.de/downloads/Setup/filius_lat
 sudo dpkg -i filius.deb
 
 # configure novnc
-sudo sh -c 'cat << EOF > /usr/local/novnc/noVNC-1.2.0/index.html\n<!DOCTYPE html>\n<html><head><meta http-equiv=\"refresh\" content=\"0; url=/vnc.html?autoconnect=true&password=game&resize=scale\" /></head><body><p>In 0 seconds you will be redirected to /vnc.html?autoconnect=true&password=game&resize=scale</p></body></html>\nEOF'"
+sudo cp -f /workspaces/filius/.devcontainer/noVNC-1.2.0_index.html /usr/local/novnc/noVNC-1.2.0/index.html

@@ -26,9 +26,9 @@
 	},
 	// Use 'postCreateCommand' to run commands after the container is created.
 	// install pygame && add settings for opening novnc terminal
-	"postCreateCommand": "./postCreateCommand.sh",
+	"postCreateCommand": "/workspaces/filius/.devcontainer/postCreateCommand.sh",
    // Use 'postStartCommand' to run commands after the container is started.
-	"postStartCommand": "./postStartCommand.sh", 
+	"postStartCommand": "/workspaces/filius/.devcontainer/postStartCommand.sh", 
     // Configure tool-specific properties.
 	"customizations": {
 		// Configure properties specific to VS Code.
