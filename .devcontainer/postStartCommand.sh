@@ -17,7 +17,7 @@ ln -sf '/workspaces/filius/filius bestanden' '/home/codespace/filius bestanden'
 # start filius and leave it running in background
 nohup bash -c 'filius > .nohup_filius.out 2>&1 & rm nohup.out &'
 
-sleep 2
+sleep 4
 # maximize filius window
 wmctrl -r 'FILIUS' -b add,maximized_horz,maximized_vert
 # wmctrl -r ':ACTIVE:' -b add,full_screen // alternative
