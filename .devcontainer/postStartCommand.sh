@@ -25,7 +25,7 @@ echo $?
 wmctrl -l
 echo $?
 # wait for FILIUS window
-while ! wmctrl | grep -q FILIUS ; do sleep 1; echo "wait for FILIUS window"; done
+while ! wmctrl -l| grep -q FILIUS ; do sleep 1; echo "wait for FILIUS window"; done
 echo $?
 #show list of windows
 wmctrl -l
