@@ -2,7 +2,6 @@
 
 # install packages
 sudo apt-get update
-yes y | sudo apt install default-jre
 yes y | sudo apt install wmctrl
 
 # download and install filius
