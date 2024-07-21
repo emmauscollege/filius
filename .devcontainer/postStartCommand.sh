@@ -15,6 +15,7 @@ ln -sf '/workspaces/filius/filius bestanden' '/home/codespace/filius bestanden'
 #chmod +x /home/gitpod/Desktop/filius.desktop
 
 # start filius and leave it running in background
+cd /workspaces/filius/.devcontainer
 nohup bash -c 'filius > .nohup_filius.out 2>&1 & rm nohup.out &'
 
 sleep 4
