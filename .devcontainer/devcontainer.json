@@ -14,6 +14,10 @@
 			"vncPort": "5901"
 		}
 	},
+	// Use 'postCreateCommand' to run commands after the container is created.
+	"postCreateCommand": "/workspaces/filius/.devcontainer/postCreateCommand.sh",
+  	 // Use 'postStartCommand' to run commands after the container is started.
+	"postStartCommand": "/workspaces/filius/.devcontainer/postStartCommand.sh", 
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
 	"forwardPorts": [
 		6080
@@ -24,12 +28,7 @@
 			"onAutoForward": "openPreview"
 		}
 	},
-	// Use 'postCreateCommand' to run commands after the container is created.
-	// install pygame && add settings for opening novnc terminal
-	"postCreateCommand": "/workspaces/filius/.devcontainer/postCreateCommand.sh",
-   // Use 'postStartCommand' to run commands after the container is started.
-	"postStartCommand": "/workspaces/filius/.devcontainer/postStartCommand.sh", 
-    // Configure tool-specific properties.
+    	// Configure tool-specific properties.
 	"customizations": {
 		// Configure properties specific to VS Code.
 		"vscode": {
