@@ -8,7 +8,7 @@ tasks:
       ln -s '/workspace/filius/filius bestanden' '/home/gitpod/Desktop/filius bestanden'
       cp /usr/share/applications/filius.desktop /home/gitpod/Desktop/
       chmod +x /home/gitpod/Desktop/filius.desktop
-      filius
+      filius &
       sleep 1
       wmctrl -r 'FILIUS' -b add,maximized_horz,maximized_vert
       // wmctrl -r ':ACTIVE:' -b add,full_screen // alternative
