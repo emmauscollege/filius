@@ -2,6 +2,7 @@ FROM gitpod/workspace-full-vnc
 
 RUN sudo apt-get update
 RUN yes y | sudo apt install default-jre
+RUN yes y | sudo apt install wmctrl
 
 WORKDIR /tmp
 
