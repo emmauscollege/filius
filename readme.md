@@ -11,6 +11,7 @@ Voer de volgende stappen uit om te beginnen:
 - Beweeg met je muis naar de regel met 6080. Klik op het wereldbolletje dat op de regel verschijnt. Hiermee open je Filius in een nieuw browservenster.
 - Wil Filiusnetwerken opslaan voor later gebruik? Doe dit in de map 'Filius bestanden'.
 - Zorg dat je je Codespace minimaal 1x per maand opent, anders dan wordt je Codespace gewist en ben je je opgeslagen bestanden kwijt.
+- Als je langer dan 30 minuten achter elkaar met Filius werkt, maak dan een kleine edit in dit readme bestand. Na 30 minuten inactiviteit wordt je Codespace gestopt (niet gewist). Je opgeslagen bestanden zijn er nog, maar waar je mee bezig was in Filius is weg. Werken in Filius ziet Codespaces niet als activiteit, het typen in een bestand wel.
 
 Veel plezier!
 
