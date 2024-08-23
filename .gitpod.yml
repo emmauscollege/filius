@@ -3,7 +3,7 @@ image:
 tasks:
   - command: |
       # set java version to the latest installed
-      latest_java=$(sdk list java | awk '/installed/ {print $NF}'|sort -V|tail -n 1) && sdk default java $latest_java
+      latest_java=$(sdk list java | awk '/local only/ {print $NF}'|sort -V|tail -n 1) && sdk default java $latest_java
       # set language of Filius
       sudo sed -i 's/# locale=en_GB/locale=en_GB/' /etc/filius/filius.ini
       # link 'filius bestanden'
