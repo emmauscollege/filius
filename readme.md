@@ -5,13 +5,19 @@
 
 Met deze repository kun je aan de slag met Filius zonder het te installeren. Daarvoor gebruiken we de ontwikkelomgeving GitHub Codespaces. Deze ontwikkelomgeving werkt in een browser (dus ook op Chromebooks). Filius is een programma om te leren hoe computers met elkaar communiceren.
 
-Voer de volgende stappen uit om te beginnen:
-- Klik hierboven op de zwarte knop 'Open in GitHub Codespaces'.
-- Wanneer je workspace klaar is met opstarten (dit kan enkele minuten duren), dan zie je iets onder het midden van je scherm een tab "Ports" met daarnaast een blauw bolletje. Klik daarop.
-- Beweeg met je muis naar de regel met 6080. Klik op het wereldbolletje dat op de regel verschijnt. Hiermee open je Filius in een nieuw browservenster.
-- Wil Filiusnetwerken opslaan voor later gebruik? Doe dit in de map 'Filius bestanden'.
-- Zorg dat je je Codespace minimaal 1x per maand opent, anders dan wordt je Codespace gewist en ben je je opgeslagen bestanden kwijt.
-- Als je langer dan 30 minuten achter elkaar met Filius werkt, maak dan een kleine edit in dit readme bestand. Na 30 minuten inactiviteit wordt je Codespace gestopt (niet gewist). Je opgeslagen bestanden zijn er nog, maar waar je mee bezig was in Filius is weg. Werken in Filius ziet Codespaces niet als activiteit, het typen in een bestand wel.
+## Filius starten
+Voer de volgende stappen uit om een Codespace met Filius te starten:
+1. Klik hierboven op de zwarte knop 'Open in GitHub Codespaces'.
+2. Wanneer je workspace klaar is met opstarten (dit kan enkele minuten duren), dan zie je iets onder het midden van je scherm een tab "Ports" met daarnaast een blauw bolletje. Klik daarop.
+3. Beweeg met je muis naar de regel met 6080. Klik op het wereldbolletje dat op de regel verschijnt. Hiermee open je Filius in een nieuw browservenster.
+4. Wil Filiusnetwerken opslaan voor later gebruik? Doe dit in de map 'Filius bestanden'.
+
+## Problemen oplossen
+De volgende stappen kunnen helpen bij het oplossen van problemen:
+1. Zorg dat je je Codespace minimaal 1x per maand opent, anders dan wordt je Codespace gewist en ben je je opgeslagen bestanden kwijt.
+2. Als je langer dan 30 minuten achter elkaar met Filius werkt, maak dan een kleine edit in dit readme bestand. Na 30 minuten inactiviteit wordt je Codespace gestopt (niet gewist). Je opgeslagen bestanden zijn er nog, maar waar je mee bezig was in Filius is weg. Werken in Filius ziet Codespaces niet als activiteit, het typen in een bestand wel.
+3. Als je een codespace opnieuw opent en Filius start niet vanzelf, type dan in de terminal (onderaan je scherm in de Codespace) het commando `filius`
+4. Als je een Codespace opnieuw opent en je ziet geen Filius, open dan een nieuw tabblad met het scherm van Filius. Je doet dit door te klikken op Ports (onderaan in je Codespace), beweeg de muis naar de regel met 6080. Klik op het wereldbolletje dat op de regel verschijnt.
 
 Veel plezier!
 
