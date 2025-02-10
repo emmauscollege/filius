@@ -1,5 +1,10 @@
 # Werkomgeving Filius
+[![Open in Glitch](https://img.shields.io/badge/Open%20in-Glitch-blue?logo=glitch)](https://glitch.com/edit/#!/import/github/emmauscollege/filius)
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/emmauscollege/filius)
+[![Open in CodeSandbox](https://img.shields.io/badge/Open%20in-CodeSandbox-blue?style=flat-square&logo=codesandbox)](https://githubbox.com/emmauscollege/filius)
 
+[![Open in Repl.it](https://replit.com/badge/github/withastro/astro)](https://replit.com/github/emmauscollege/filius)
+[![Open in Codeanywhere](https://codeanywhere.com/img/open-in-codeanywhere-btn.svg)](https://app.codeanywhere.com/#https://github.com/emmauscollege/filius)
 [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/emmauscollege/filius)
 
 Met deze repository kun je in GitPod aan de slag in Filius, het programma om te leren hoe computers met elkaar communiceren.
