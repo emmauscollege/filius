@@ -1,6 +1,9 @@
 # executed each time the container is (re)started
 # commands should terminate, use nohup otherwise
 
+# dirty fix not tested: wait 5 seconds to prevent filius to abort with an error that it cannot connect to DISPLAY :1
+sleep 5
+
 # set language of Filius
 sudo sed -i 's/# locale=en_GB/locale=en_GB/' /etc/filius/filius.ini 
 
