@@ -1,6 +1,6 @@
 # Filius openen in je browser
 
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/informaticascw/filius?quickstart=1
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/emmauscollege/filius?quickstart=1
 "Start je eigen Codespace met Filius, je hoeft niets te installeren.")<br>
 
 Met deze repository kun je aan de slag met Filius zonder het te installeren. Daarvoor gebruiken we de ontwikkelomgeving GitHub Codespaces. Deze ontwikkelomgeving werkt in een browser (dus ook op Chromebooks). Filius is een programma om te leren hoe computers met elkaar communiceren.
