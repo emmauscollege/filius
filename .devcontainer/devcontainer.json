@@ -1,0 +1,41 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/python
+{
+	"name": "filius",
+	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
+	"image": "mcr.microsoft.com/devcontainers/universal:2-linux",
+	// Features to add to the dev container. More info: https://containers.dev/features.
+	"features": {
+		"ghcr.io/devcontainers/features/desktop-lite:1": {
+			"version": "latest",
+			"noVncVersion": "1.2.0", // version hard coded in postCreateCommand, later version doesn't seem to work, don't know why
+			"password": "game",
+			"webPort": "6080",
+			"vncPort": "5901"
+		}
+	},
+	// Use 'postCreateCommand' to run commands after the container is created.
+	"postCreateCommand": "/workspaces/filius/.devcontainer/postCreateCommand.sh",
+  	 // Use 'postStartCommand' to run commands after the container is started.
+	"postStartCommand": "/workspaces/filius/.devcontainer/postStartCommand.sh", 
+	// Use 'forwardPorts' to make a list of ports inside the container available locally.
+	"forwardPorts": [
+		6080
+	],
+	"portsAttributes": {
+		"6080": {
+			"label": "GUI",
+			"onAutoForward": "openPreview"
+		}
+	},
+    	// Configure tool-specific properties.
+	"customizations": {
+		// Configure properties specific to VS Code.
+		"vscode": {
+			"extensions": [
+				"ms-vsliveshare.vsliveshare", // add google-docs like typing in same file, click on live-share button in left icon pane
+				"mhutchie.git-graph" // add graphical viewer for branches and commits, click on button in Source-Code tab
+			]
+		}
+	}
+}
