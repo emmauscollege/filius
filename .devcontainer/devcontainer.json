@@ -1,6 +1,6 @@
 {
   "name": "filius",
-  "image": "mcr.microsoft.com/devcontainers/universal:2-linux",
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu-22.04",
   "features": {
     "ghcr.io/devcontainers/features/desktop-lite:1": {
       "version": "latest",

@@ -3,9 +3,13 @@
 
 set -e
 
+
 # install packages
 sudo apt-get update
 yes y | sudo apt-get install wmctrl
+
+sudo apt-get clean
+sudo rm -rf /var/lib/apt/lists/*
 
 # download and install filius
 cd /tmp
