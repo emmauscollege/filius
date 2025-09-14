@@ -23,3 +23,7 @@ sudo DEBIAN_FRONTEND=noninteractive apt-get install -y /tmp/filius.deb
 # 6️⃣ Cleanup
 sudo apt-get clean
 sudo rm -rf /var/lib/apt/lists/*
+
+# 7️⃣ Copy Filius autostart file from repo
+mkdir -p ~/.config/autostart
+cp .devcontainer/autostart/filius.desktop ~/.config/autostart/

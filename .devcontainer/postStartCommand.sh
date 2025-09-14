@@ -4,10 +4,5 @@ set -x
 
 export DISPLAY=:1
 
-# 1️⃣ Start XFCE desktop
-startxfce4 &
-while ! xset q >/dev/null 2>&1; do
-    sleep 1
-done
-# 2️⃣ Start Filius
-filius &
+# Start een volledige XFCE sessie
+xfce4-session &
