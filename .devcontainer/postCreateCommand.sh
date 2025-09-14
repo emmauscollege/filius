@@ -31,6 +31,7 @@ cp .devcontainer/autostart/filius.desktop ~/.config/autostart/
 # --- Automatische herstart na eerste build ---
 if [ ! -f /tmp/.restart-needed ]; then
     touch /tmp/.restart-needed
-    echo "🔁 Eerste build voltooid. Container wordt nu opnieuw gestart..."
-    kill 1
+    echo "🔁 Eerste build voltooid. Container wordt over 2 seconden gestopt..."
+    (sleep 2 && pkill -u vscode) &
+    exit 0
 fi
