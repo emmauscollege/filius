@@ -27,3 +27,10 @@ sudo rm -rf /var/lib/apt/lists/*
 # 7️⃣ Copy Filius autostart file from repo
 mkdir -p ~/.config/autostart
 cp .devcontainer/autostart/filius.desktop ~/.config/autostart/
+
+# --- Automatische herstart na eerste build ---
+if [ ! -f /tmp/.restart-needed ]; then
+    touch /tmp/.restart-needed
+    echo "🔁 Eerste build voltooid. Container wordt nu opnieuw gestart..."
+    kill 1
+fi
